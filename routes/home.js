@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const controllers = require("../controllers");
 
-router.get("/users", controllers.users.allUsers);
+router.get("/", controllers.home.show);
 
 module.exports = router;

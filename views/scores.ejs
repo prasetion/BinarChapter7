@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<%- include("partials/head.ejs") %>
+
+    <body>
+        <main>
+            <%- include("partials/sidebar.ejs") %>
+
+                <div class="container mt-5">
+                    <form action="/dashboard" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="inputUsername">Type username to search user</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="fullname" class="form-control mh-100" id="inputFullname" placeholder="input full name" name="fullname">
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">User Name</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Gender</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+
+                </div>
+        </main>
+    </body>
+
+</html>
