@@ -7,5 +7,11 @@ module.exports = {
     },
     userById: (req, res) => {
         res.render("users")
+    },
+    registerUser: (req, res) => {
+        res.render("register", {
+            title: "ini title",
+            navigation: "register"
+        });
     }
 };
