@@ -1,10 +1,10 @@
-const home = require("./homeController");
+const pages = require("./pageController");
 const login = require("./loginController");
 const users = require("./usersController");
 const scores = require("./scoreController");
 
 module.exports = {
-    home,
+    pages,
     login,
     users,
     scores
