@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       });
     }
     static #encrypt = (password) => bcrypt.hashSync(password, 10);
-    static register = ({ username, password }) => {
+    static register = ({ username, password, fullname, email }) => {
       const encryptedPassword = this.#encrypt(password);
 
       return this.create({
@@ -32,8 +32,8 @@ module.exports = (sequelize, DataTypes) => {
         username: username,
         is_admin: is_admin,
       };
-      const rahasia = "secretsamitoken";
-      const token = jwt.sign(payload, rahasia);
+      const secret = "mysecrettoken";
+      const token = jwt.sign(payload, secret);
       return token;
     };
 

@@ -1,9 +1,18 @@
 const pages = require("./pageController");
-const players = require("./playerController");
+const dashboard = require("./dashboardController");
 const auth = require("./authController");
+const games = require("./gamesController");
+const roomHistory = require("./roomHistoryController");
+const roomList = require("./roomListController");
+const api = require("./apiController");
 
 module.exports = {
   pages,
   auth,
-  players,
+  dashboard,
+  auth,
+  games,
+  roomHistory,
+  roomList,
+  api,
 };

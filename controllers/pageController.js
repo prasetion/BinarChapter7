@@ -1,31 +1,32 @@
+// page
 module.exports = {
   index: (req, res) => {
-    const title = "Hello World";
-    const subTitle = "Welcome to the world!!!!!!!!!!";
+    const title = "Home Page";
+    const subTitle = "";
     res.render("index", {
       title,
       subTitle,
     });
   },
   login: (req, res) => {
-    const title = "Hello World";
-    const subTitle = "Welcome to the world!!!!!!!!!!";
+    const title = "Login Page";
+    const message = "";
     res.render("login", {
       title,
-      subTitle,
+      message,
     });
   },
-  register: (req, res) => {
-    const title = "Hello World";
-    const subTitle = "Welcome to the world!!!!!!!!!!";
-    res.render("register", {
+  signUp: (req, res) => {
+    const title = "Sign up Page";
+    const subTitle = "";
+    res.render("signup", {
       title,
       subTitle,
     });
   },
   game: (req, res) => {
-    const title = "Hello World";
-    const subTitle = "Welcome to the world!!!!!!!!!!";
+    const title = "Game Page";
+    const subTitle = "";
     res.render("game", {
       title,
       subTitle,
