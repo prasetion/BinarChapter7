@@ -46,6 +46,4 @@ router.post("/api/v2/room/:room/join", tokenCheck, controller.api.join);
 router.post("/api/v2/room/:room/play", tokenCheck, controller.api.play);
 router.get("/api/v2/room/:room/result", tokenCheck, controller.api.result);
 
-// api
-// router.get();
 module.exports = router;
