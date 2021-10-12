@@ -1,11 +1,9 @@
 const pages = require("./pageController");
-const login = require("./loginController");
-const users = require("./usersController");
-const scores = require("./scoreController");
+const players = require("./playerController");
+const auth = require("./authController");
 
 module.exports = {
-    pages,
-    login,
-    users,
-    scores
-}
+  pages,
+  auth,
+  players,
+};

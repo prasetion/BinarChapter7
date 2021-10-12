@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-const pageRouter = require("./page");
-const usersRouter = require("./users");
-const scoresRouter = require("./scores");
-const loginRouter = require("./login");
+const controller = require("../controllers");
 
-router.use(pageRouter);
-router.use(usersRouter);
-router.use(scoresRouter);
-router.use(loginRouter);
+// page no auth
+router.get("/", controller.pages.index);
+router.get("/login", controller.pages.login);
+
+// login and regis with auth
+router.post("/login", controller.auth.login);
+router.post("/register", controller.auth.register);
 
 module.exports = router;
